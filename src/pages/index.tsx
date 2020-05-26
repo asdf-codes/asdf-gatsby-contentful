@@ -3,6 +3,7 @@ import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import SEO from "../components/seo"
+import {Grid} from '../style'
 
 
 
@@ -14,6 +15,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <div title={siteTitle}>
       <SEO title="All posts" />
+      <Grid>
       {ideas.map(({node}) => {
         const name = node.name || node.slug
         return (
@@ -26,6 +28,7 @@ const BlogIndex = ({ data, location }) => {
           </div>
         )
       })} 
+      </Grid>
     </div>
   )
 }
