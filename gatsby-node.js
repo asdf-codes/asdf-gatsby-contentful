@@ -11,14 +11,13 @@ exports.createPages = async ({ graphql, actions }) => {
           edges { 
             node {
               slug 
-              title
             }
           }  
         }
       }
     `
   )
-
+  
   if (result.errors) {
     throw result.errors
   }
