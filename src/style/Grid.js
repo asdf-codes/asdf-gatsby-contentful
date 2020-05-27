@@ -1,9 +1,35 @@
 import styled from 'styled-components'
 
+export const GridContainer = styled.div `
+    display: grid;
+    grid-template-columns: 1fr 90vw 1fr;
+
+    @media ${props => props.theme.breakpoints.mobile} {
+        grid-template-columns: 1fr 90vw 1fr;
+    }
+`
+
 export const Grid = styled.div`
-    display: Grid;
-    grid-auto-rows: 32;
-    grid-template-columns: repeat(auto-fill, minmax(33vw, 1fr)) ;
-    grid-gap: 3rem;
+    grid-column: 2 / 3;
+    column-count: 3;
+    column-gap: 1rem;
+
+    @media ${props => props.theme.breakpoints.tablet} {
+        column-count: 2;
+    }
+    @media ${props => props.theme.breakpoints.mobile} {
+        column-count: 1;
+    }
+    
+`
+
+export const Item = styled.div`
+    display: inline-block;
+    margin: 0 0 3rem;
+    
+    width: 100%;
+    height: 100%;
+
+
 `
  
