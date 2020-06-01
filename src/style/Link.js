@@ -10,11 +10,11 @@ export const Links = styled(props => <Link {...props}/>)`
 `
 
 export const LinksCover = styled.div `
-    cursor: pointer;
+    cursor: default;
     transition: transform 0.5s ease-in-out;
     &:hover,
     &:focus {
-        transform: scale(1.1);
+        transform: scale(3);
     
     }
 `

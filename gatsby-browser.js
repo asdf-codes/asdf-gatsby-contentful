@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
     }
     body, html {
-        background: black;
+        background: #E5E5E5;
         height: 100%;
     }
 

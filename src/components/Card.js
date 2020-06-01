@@ -10,7 +10,7 @@ export const Card = ({ fluid, name, slug}) => {
                 <LinksCover>
                     <Img fluid={fluid} imsStyle={{}}
                             style={{
-                            maxWidth: "500px",
+                            width: "min(400px, 95vw)",
                             margin: "0 auto",
                     }}/>
                 </LinksCover>
